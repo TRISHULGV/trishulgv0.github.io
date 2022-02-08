@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>portfolio</title>
+</head>
+<body>
+    <section id="home">
+        <div class="main-box">
+            <h1>HI I'M <span class="txt-type" data-wait="1000" data-words='["print", "console.log"]'></span>(TRISHUL) <br> I'M A FULL-STACK DEVELOPER 
+            </h1>
+        </div>
+       <a href="#skills" class="btn btn-light">DOWN <i class="fas fa-chevron-circle-down"></i></a>
+    </section>
+    <section id="skills">
+        <div class="main-box">
+            <h1>SKILLS</h1>
+            <div class="uppersection">
+            <div class="python">
+                <h1>PYTHON</h1>
+                <p>python is a general-purpose programming language used to serve different purpose like Back-end development(server-side),
+                app development etc..
+                </p>
+                <br>
+                <a href="https://en.wikipedia.org/wiki/Python_(programming_language)" target="_blank" class="skillbutton">KNOW MORE</a>
+            </div>
+            <div class="django">
+                <h1>DJANGO</h1>
+                <p>Django is a python framework specifically used for server side development, which makes it so popular in web development and makes server-side development easy.</p>
+                <br>
+                <a href="https://en.wikipedia.org/wiki/Django_(web_framework)" target="_blank"class="skillbutton">KNOW MORE</a>
+            </div>
+            <div class="mysql">
+                <h1>MySQL</h1>
+                <p>MySQL is a popular and open-source relational database management system, which uses Structured Query Language to run the programme and logics.</p>
+                <br>
+                <a href="https://en.wikipedia.org/wiki/MySQL" 
+                target="_blank" class="skillbutton">KNOW MORE</a>
+            </div>
+        </div>
+        <br>
+        <div class="lowersection">
+            <div class="vuejs">
+                <h1>VUE JS</h1>
+                <p> Vue is a open-source javascript framework used for frontend. Vue is mainly used for building user interfaces and single-page applications which makes it
+                    fast for simple and complex applications.
+                </p>
+                <br>
+                <a href="https://en.wikipedia.org/wiki/Vue.js" 
+                target="_blank" class="skillbutton">KNOW MORE</a>
+            </div>
+            <div class="html">
+                <h1>HTML</h1>
+                <p>HTML or HyperText Markup Language is a standard markup language understood by browsers to display content, links etc.. which makes it a basic language that every web developer should learn. </p>
+                <br>
+                <a href="https://en.wikipedia.org/wiki/HTML" 
+                target="_blank" class="skillbutton"> KNOW MORE</a>
+            </div>
+            <div class="css">
+                <h1>CSS</h1>
+                <p>CSS or Cascading Style Sheets is used for styling like fonts, color, sspacing of elements etc.., which makes it important topic in web development.</p>
+                <br>
+                <br>
+                <a href="https://en.wikipedia.org/wiki/CSS" 
+                target="_blank" class="skillbutton"> KNOW MORE</a>
+            </div>
+        </div>
+        </div>
+        <a href="#home" class="btn btn-light">UP <i class="fas fa-chevron-circle-up"></i> </a>
+        <a href="#blog" class="btn btn-dark" >DOWN <i class="fas fa-chevron-circle-down"></i> </a>
+    </section>
+    <section id="blog">
+        <div class="main-box">
+            <h1>BLOG</h1>
+            <br>
+            <p>I've always been someone who has both creative and logic side. When I discoverd about web development I realized it would be a perfect fit for me. And then, I started learning about the skills I mentioned above and slowely learned the core topics of web design and development</p>
+            <p></p>
+        </div>
+        <a href="#skills" class="btn btn-dark" >UP <i class="fas fa-chevron-circle-up"></i></a>
+        <a href="#contact" class="btn btn-light">DOWN <i class="fas fa-chevron-circle-down"></i></a>      
+    </section>
+    <section id="contact">
+        <div class="main-box">
+            <h1>CONTACT ME</h1>
+            <form action="https://formsubmit.co/trishulgv46@email.com" method="POST">
+                <label for="name">NAME</label>
+                <input type="text" name="name" placeholder="Enter Your Name" required>
+                <label for="email">EMAIL</label>
+                <input type="email" name="email" placeholder="Enter Your Email" required>
+                <label for="message">ENTER MESSAGE</label>
+                <textarea name="message" id="" cols="30" rows="10"></textarea>
+                <button type="submit" class="btnn">Send</button>
+           </form>
+        </div>
+        <a href="#blog" class="btn btn-light">UP <i class="fas fa-chevron-circle-up"></i></a>
+        <footer>
+            <h1>Copyright2022<span class="copy">&copy</span></h1>
+            <br>
+            <div class="socials">
+            <a href="https://github.com/TRISHULGV" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:trishulgv46@gmail.com" target="_blank"><i class="fas fa-envelope" ></i></a>
+            </div>
+        </footer>
+    </section>
+    <script src="../js/typing.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script>
+      $('.btn').on('click', function(event) {
+          if(this.hash !== '' ){
+              event.preventDefault();
+              const hash = this.hash;
+              $('html, body'). animate(
+                  {
+                      scrollTop: $(hash).offset().top
+                  },
+                  800
+              );
+          }
+      });
+  </script>
+</body>
+</html>
